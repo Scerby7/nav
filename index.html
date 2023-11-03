@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="sablona.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="left"><img src="2.png" alt="logo" class="prve"><img src="3.png" alt="logo" class="druhe"></div>
+        <div class="right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <a href="#">Policy</a> 
+        </div>
+        <div class="burger_button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+</body>
+</html>
+<script type="text/javascript">
+    $(".burger_button").click(function() {
+        $("nav").toggleClass("open");
+        $(this).toggleClass("burger_button_open");
+    });
+</script>
+<script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
